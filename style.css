@@ -1,0 +1,70 @@
+:root {
+  --slate-300: #d5e1ef;
+  --slate-500: #68778d;
+  --slate-900: #1f314f;
+  --white: #ffffff;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--slate-300);
+  font-family: 'Outfit', sans-serif;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+}
+
+main {
+  padding: var(--spacing-300);
+  /* Align the item inside the grid area it is placed into */
+  justify-self: center;
+  align-self: center;
+}
+
+.qr-code-container {
+  background-color: var(--white);
+  padding: var(--spacing-200) var(--spacing-200) var(--spacing-400)
+    var(--spacing-200);
+  border-radius: var(--spacing-300);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.477);
+  text-align: center;
+  width: min-content;
+}
+
+.qr-code-img {
+  width: 288px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  display: block;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  margin: 24px 0 16px 0;
+}
+
+p {
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: var(--slate-500);
+}
+
+.attribution {
+  padding: var(--spacing-300);
+  text-align: center;
+}
